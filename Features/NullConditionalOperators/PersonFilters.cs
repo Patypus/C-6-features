@@ -17,7 +17,10 @@ namespace Features.NullConditionalOperators
             Need the Where clause at the end because if HomeAddress is null the select result is 
             null + " " + null
             so we need to filter out these single space results as these are effectively false
-            possitives and don't tell us about the collection of people we are filtering
+            possitives and don't tell us about the collection of people we are filtering.
+
+            This is true for sting concatenation in this case. String.join behaves differently to joining
+            nulls and returns String.Empty. In this case the .Where would need to filter out empty strings.
             */
         }
     }
