@@ -23,5 +23,25 @@ namespace Features.NullConditionalOperators
             nulls and returns String.Empty. In this case the .Where would need to filter out empty strings.
             */
         }
+
+        public IEnumerable<string> CollectFirstNamesWithNullCoalescing(IEnumerable<Person> personCollection)
+        {
+            return personCollection.Select(p => p?.Forename ?? "Unknown");
+        }
+
+        public IEnumerable<string> CollectNamesByDateWithNullCheckOnParameter(IEnumerable<Person> personCollection, DateTime baseDate)
+        {
+            return personCollection?.Where(p => p.DateJoined > baseDate)
+                                    .Select(p => p?.Forename + " " + p?.Lastname);
+        }
+
+        public IEnumerable<string> CollectNamesByDate_ReturningEmptyCollectionFullNullParameter(IEnumerable<Person> personCollection, 
+                                                                                                DateTime baseDate)
+        {
+            var filter = personCollection?.Where(p => p.DateJoined > baseDate)
+                                          .Select(p => p?.Forename + " " + p?.Lastname);
+
+            return filter ?? new List<string>();
+        }
     }
 }
