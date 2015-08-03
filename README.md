@@ -1,5 +1,4 @@
 # C-6-features
-------
 
 This project is a quick look into the new language features in C# 6. Partly for my own reference when I forget exactly how these things work but mostly as an easy way to play with new toys :)
 
