@@ -51,6 +51,9 @@
     <Compile Include="NullConditionalOperators\NullConditionalTests.cs" />
     <Compile Include="NullConditionalOperators\PersonFilters.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaticUsing\Mood.cs" />
+    <Compile Include="StaticUsing\StaticUsingTests.cs" />
+    <Compile Include="StaticUsing\StaticUtilities.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
