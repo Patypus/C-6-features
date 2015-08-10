@@ -48,6 +48,9 @@
     <Compile Include="AutoProperties\AutoPropertyOrderItem.cs" />
     <Compile Include="ExpressionBodies\BodiedFunctionCallingTests.cs" />
     <Compile Include="ExpressionBodies\BodiedFunctions.cs" />
+    <Compile Include="IndexInitialisers\InitialisationFactory.cs" />
+    <Compile Include="IndexInitialisers\InitialisationTests.cs" />
+    <Compile Include="IndexInitialisers\Record.cs" />
     <Compile Include="NullConditionalOperators\DataStructures\Address.cs" />
     <Compile Include="NullConditionalOperators\DataStructures\Person.cs" />
     <Compile Include="NullConditionalOperators\NullConditionalTests.cs" />
