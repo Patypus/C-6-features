@@ -46,6 +46,8 @@
   <ItemGroup>
     <Compile Include="AutoProperties\AutoPropertiesTests.cs" />
     <Compile Include="AutoProperties\AutoPropertyOrderItem.cs" />
+    <Compile Include="ExpressionBodies\BodiedFunctionCallingTests.cs" />
+    <Compile Include="ExpressionBodies\BodiedFunctions.cs" />
     <Compile Include="NullConditionalOperators\DataStructures\Address.cs" />
     <Compile Include="NullConditionalOperators\DataStructures\Person.cs" />
     <Compile Include="NullConditionalOperators\NullConditionalTests.cs" />
