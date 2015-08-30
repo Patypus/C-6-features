@@ -46,6 +46,9 @@
   <ItemGroup>
     <Compile Include="AutoProperties\AutoPropertiesTests.cs" />
     <Compile Include="AutoProperties\AutoPropertyOrderItem.cs" />
+    <Compile Include="ExceptionFilters\ComplexException.cs" />
+    <Compile Include="ExceptionFilters\ExceptionThrower.cs" />
+    <Compile Include="ExceptionFilters\FilteringTests.cs" />
     <Compile Include="ExpressionBodies\BodiedFunctionCallingTests.cs" />
     <Compile Include="ExpressionBodies\BodiedFunctions.cs" />
     <Compile Include="IndexInitialisers\InitialisationFactory.cs" />
