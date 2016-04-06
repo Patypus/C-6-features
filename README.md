@@ -67,3 +67,23 @@ Operator to coalesce null values in an expression:
 var postcode = lastOrder?.DeliveryAddress?.PostCode
 ```
 All of this will evaluate to null if any property is null
+
+
+###Static Usings
+Usings can be declared as static to reference static properties and methods as though they were in the current class:
+```C#
+using System.Math;
+//---
+var pi = Math.Pi;
+```
+becomes
+```C#
+using static System.Math;
+//---
+var pi = Pi;
+
+###String Interpolation
+Sematic formatting of strings:
+```C#
+return $"Hello ${name}, how are you today?"
+```
