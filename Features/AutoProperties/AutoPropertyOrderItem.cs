@@ -26,7 +26,7 @@
         }
         
         /*
-        * This is a compile failure are the auto setter is only available to the constructor.
+        * This is a compile failure as the auto setter is only available to the constructor.
         *
         * public void SetCustomer(string newCustomer)
         * {
